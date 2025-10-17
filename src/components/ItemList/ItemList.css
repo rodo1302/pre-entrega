@@ -1,0 +1,11 @@
+.item-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 5px;
+}
+
+.item-list a {
+  text-decoration: none;
+}

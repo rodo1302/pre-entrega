@@ -1,0 +1,41 @@
+.product-item {
+  background-color: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 15.625rem; /* 250px */
+  color: #f5f5f5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-item img {
+  width: 250px;
+  height: 250px;
+  display: block;
+}
+
+.product-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px #baff39;
+}
+
+.product-item a {
+  text-decoration: none;
+  color: inherit;
+  display: block; /*hacemos que el link tome todo el bloque del article y sea clickeable*/
+}
+
+.product-item p {
+  margin: 0.2rem 0; /* 6px */
+}
+
+.product-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #ffcc66;
+}
+
+.product-item h3 {
+  margin: 5px;
+}

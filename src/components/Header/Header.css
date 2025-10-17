@@ -1,0 +1,16 @@
+.header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #272727;
+  top: 0; /* Lo coloca en la parte superior */
+  left: 0;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 70px; /* Altura del header */
+  z-index: 1000;
+}
+.header-logo {
+  height: 50px;
+  width: auto;
+}

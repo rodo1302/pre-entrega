@@ -1,0 +1,49 @@
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+  margin-right: 2rem;
+  align-items: center;
+}
+
+.nav-list a {
+  color: #baff39;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-list a:hover {
+  color: #7e39ff; /* color de hover */
+}
+.cart-icon {
+  height: 30px;
+  margin-right: 0.5rem;
+  width: auto;
+  padding: 10px;
+  border-radius: 10px;
+}
+.cart-icon:hover {
+  filter: invert(100%);
+  background-color: #7e39ff;
+}
+
+.cart-count {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+
+  font-size: 12px;
+  position: absolute; /* Para superponerlo sobre el icono */
+  top: 0;
+  left: 74%;
+  top: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18px;
+  height: 18px;
+  margin-left: 1px; /* Espacio entre el icono y el número */
+}
