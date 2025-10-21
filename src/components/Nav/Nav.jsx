@@ -8,7 +8,7 @@ export const Nav = () => {
   return (
     <nav className="nav">
       <ul className="nav-list">
-        <li>
+        <li className="nav-item-cart">
           <Link to="/carrito">
             <img className="cart-icon" src={car} alt="Carrito" />
           </Link>

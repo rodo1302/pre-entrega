@@ -30,20 +30,26 @@
   background-color: #7e39ff;
 }
 
+.nav-item-cart {
+  display: flex;
+  position: relative;
+}
+
 .cart-count {
-  background-color: red;
+  background-color: #7e39ff;
   color: white;
   border-radius: 50%;
-
+  /* float: right; */
   font-size: 12px;
-  position: absolute; /* Para superponerlo sobre el icono */
-  top: 0;
-  left: 74%;
-  top: 50%;
+  position: absolute;
+  /* top: 0; */
+  /* left: 2rem; */
+  /* top: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
   width: 18px;
   height: 18px;
-  margin-left: 1px; /* Espacio entre el icono y el número */
+  bottom: 0;
+  right: 0;
 }
