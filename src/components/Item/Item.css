@@ -15,7 +15,7 @@
   display: block;
 }
 
-.product-item:hover {
+.product-item-hover:hover {
   transform: translateY(-3px);
   box-shadow: 0 4px 12px #baff39;
 }
@@ -23,11 +23,11 @@
 .product-item a {
   text-decoration: none;
   color: inherit;
-  display: block; /*hacemos que el link tome todo el bloque del article y sea clickeable*/
+  display: block;
 }
 
 .product-item p {
-  margin: 0.2rem 0; /* 6px */
+  margin: 0.2rem 0;
 }
 
 .product-title {

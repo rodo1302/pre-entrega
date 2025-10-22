@@ -1,0 +1,53 @@
+/* Estilos para la zona de botones en ItemDetail cuando se muestra en el carrito */
+.item-detail-buttons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 6px 0;
+  min-width: 160px;
+  justify-content: center;
+}
+.item-detail-buttons .btn-count {
+  background-color: #333;
+  padding: 0;
+}
+
+/* Alineamos el contenedor Count para que ocupe menos espacio en el carrito */
+.item-detail-buttons .count-container {
+  flex-direction: row;
+  margin-top: 0;
+  gap: 8px;
+}
+
+/* Reducimos botones dentro de Count cuando se muestran en el carrito */
+.item-detail-buttons .btn-count button {
+  width: 15px;
+  height: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.item-detail-buttons .btn-count button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #333;
+}
+
+.item-detail-buttons .add-to-cart-btn {
+  width: 20px;
+  padding: 0;
+  border-radius: 50%;
+  text-align: center;
+  background-color: #333;
+}
+.item-detail-buttons .add-to-cart-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px #333;
+}
+
+/* Si hace falta, adaptar estilos para dispositivos pequeños */
+@media (max-width: 480px) {
+  .item-detail-buttons {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

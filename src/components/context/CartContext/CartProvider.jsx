@@ -8,20 +8,47 @@ export const CartProvider = ({ children }) => {
     return cart.some((item) => item.id === id);
   };
 
-  const addItem = (item) => {
+  const addItem = (item, count) => {
     if (exists(item.id)) {
-      alert("El producto ya está en el carrito");
+      setCart(
+        cart.map((prod) =>
+          prod.id === item.id ? { ...prod, quantity: count } : prod
+        )
+      );
+      if (cart.find((prod) => prod.id === item.id).quantity !== count) {
+        alert("Cantidad actualizada en el carrito");
+        return;
+      }
     } else {
-      setCart([...cart, item]);
+      setCart([...cart, { ...item, quantity: count }]);
       alert("Producto agregado al carrito");
     }
   };
+
+  const removeItem = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+  };
+
   const clearCart = () => {
     setCart([]);
   };
+
   const getTotalItems = () => {
-    if (cart.length) return cart.length;
+    return cart.reduce((acc, prod) => acc + prod.quantity, 0);
   };
-  const values = { cart, addItem, clearCart, getTotalItems };
+
+  const getItemQuantity = (id) => {
+    const item = cart.find((prod) => prod.id === id);
+    return item ? item.quantity : 0;
+  };
+
+  const values = {
+    cart,
+    addItem,
+    removeItem,
+    clearCart,
+    getTotalItems,
+    getItemQuantity,
+  };
   return <CartContext.Provider value={values}>{children}</CartContext.Provider>;
 };

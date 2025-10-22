@@ -16,13 +16,13 @@
 }
 
 /* Estilos específicos para el párrafo y la imagen dentro de la disposición lateral */
-.about p {
+.about-content p {
   flex: 1; /* Ocupa el espacio restante */
   text-align: left;
   line-height: 1.6;
 }
 
-.about img {
+.about-content img {
   flex: 1; /* También ocupa el espacio restante (así ambos tienen el 50% aprox) */
   max-width: 400px; /* Limita el tamaño de la imagen */
   height: auto;
@@ -57,30 +57,27 @@
 }
 
 /* Aplica la animación al pasar el ratón sobre la imagen */
-.about img:hover {
+.about-content img:hover {
   cursor: pointer;
   animation: imageHoverEffect 0.5s ease-out forwards;
 }
 
 /* Vuelve al estado inicial cuando el ratón sale */
-.about img {
+.about-content img {
   transition: transform 0.3s ease-in-out; /* Transición para un movimiento suave al salir del hover */
 }
 
-/* -------------------------- */
-/* 4. Responsive (Opcional, pero recomendado) */
-/* -------------------------- */
 @media (max-width: 768px) {
   /* En pantallas pequeñas, apila el párrafo y la imagen para que el diseño no se rompa */
-  .about::after {
+  .about-content {
     flex-direction: column;
   }
-  .about p,
-  .about img {
+  .about-content p,
+  .about-content img {
     flex: none; /* Desactiva el crecimiento */
     width: 100%; /* Ocupa todo el ancho disponible */
   }
-  .about img {
+  .about-content img {
     margin-top: 20px;
   }
 }

@@ -1,25 +1,57 @@
 import { useCartContext } from "../context/CartContext/useCartContext";
+import { useNavigate } from "react-router-dom";
 import "./Cart.css";
+import remove from "../../assets/eliminar.svg";
+import { ItemDetail } from "../ItemDetail/ItemDetail";
+
 export const Cart = () => {
-  const { cart, clearCart } = useCartContext();
+  const navigate = useNavigate();
+  const { cart, clearCart, removeItem } = useCartContext();
 
   return (
-    <div className="cart">
+    <section className="cart">
       <h2>Carrito de Compras</h2>
       {cart.length === 0 ? (
-        <p>No hay productos en el carrito.</p>
+        <>
+          <p>No hay productos en el carrito.</p>
+          <button className="cart-btn-home" onClick={() => navigate("/")}>
+            Volver a la tienda
+          </button>
+        </>
       ) : (
         <ul>
           {cart.map((item) => (
             <li key={item.id}>
-              <span>{item.name}</span>
+              <span className="cart-item-name">{item.name}</span>
+              <span>${item.price}.-</span>
+              <ItemDetail producto={item} buttonsOnly={true} />
+
+              <span>Subtotal: ${item.price * item.quantity}.-</span>
+              <button
+                className="cart-btn-remove"
+                onClick={() => removeItem(item.id)}
+              >
+                <img className="img-remove" src={remove} alt="Eliminar" />
+              </button>
             </li>
           ))}
-          <button className="cart-btn" onClick={() => clearCart()}>
-            <strong>Vaciar carrito</strong>
-          </button>
+          <p className="cart-total">
+            <strong>
+              Total: $
+              {cart.reduce((acc, item) => acc + item.price * item.quantity, 0)}
+              .-
+            </strong>
+          </p>
+          <div className="cart-actions">
+            <button className="cart-btn-clear" onClick={() => clearCart()}>
+              <strong>Vaciar carrito</strong>
+            </button>
+            <button className="cart-btn-checkout">
+              <strong>Finalizar Compra</strong>
+            </button>
+          </div>
         </ul>
       )}
-    </div>
+    </section>
   );
 };

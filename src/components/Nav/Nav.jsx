@@ -9,7 +9,7 @@ export const Nav = () => {
     <nav className="nav">
       <ul className="nav-list">
         <li className="nav-item-cart">
-          <Link to="/carrito">
+          <Link to="/cart">
             <img className="cart-icon" src={car} alt="Carrito" />
           </Link>
           {getTotalItems() > 0 && (
