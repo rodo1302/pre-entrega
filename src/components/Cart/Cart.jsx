@@ -1,11 +1,10 @@
 import { useCartContext } from "../context/CartContext/useCartContext";
-import { useNavigate } from "react-router-dom";
 import "./Cart.css";
 import remove from "../../assets/eliminar.svg";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
+import { Link } from "react-router-dom";
 
 export const Cart = () => {
-  const navigate = useNavigate();
   const { cart, clearCart, removeItem } = useCartContext();
 
   return (
@@ -14,9 +13,9 @@ export const Cart = () => {
       {cart.length === 0 ? (
         <>
           <p>No hay productos en el carrito.</p>
-          <button className="cart-btn-home" onClick={() => navigate("/")}>
-            Volver a la tienda
-          </button>
+          <Link to="/">
+            <button className="cart-btn-home">Volver a la tienda</button>
+          </Link>
         </>
       ) : (
         <ul>
