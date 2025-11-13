@@ -7,6 +7,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { Footer } from "./components/Footer/Footer.jsx";
 import { Cart } from "./components/Cart/Cart.jsx";
 import { About } from "./components/About/About.jsx";
+import { ProductFormContainer } from "./components/adminComponents/ProductFormContainer/ProductFormContainer.jsx";
 
 function App() {
   return (
@@ -20,10 +21,17 @@ function App() {
               <ItemListContainer titulo={"Mi Tienda - Insumos de Librería"} />
             }
           />
+          <Route
+            path="/category/:category"
+            element={
+              <ItemListContainer titulo={"Mi Tienda - Insumos de Librería"} />
+            }
+          />
           <Route path="/detail/:id" element={<ItemDetailContainer />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Form />} />
+          <Route path="/admin" element={<ProductFormContainer />} />
         </Routes>
       </main>
       <Footer />

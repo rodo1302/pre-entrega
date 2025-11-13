@@ -4,7 +4,7 @@
     "name": "Cuaderno A4 rayado",
     "price": 1200,
     "stock": 50,
-    "category": "Papelería",
+    "category": "Papeleria",
     "description": "Cuaderno tamaño A4 con 80 hojas rayadas y tapa dura.",
     "imageUrl": "/images/cuaderno.jpg"
   },
@@ -13,7 +13,7 @@
     "name": "Lapicera azul",
     "price": 250,
     "stock": 100,
-    "category": "Escritura",
+    "category": "Libreria",
     "description": "Lapicera con tinta azul de trazo fino y cuerpo ergonómico.",
     "imageUrl": "/images/boligrafo.jpg"
   },
@@ -22,7 +22,7 @@
     "name": "Resaltadores pastel (set x6)",
     "price": 1800,
     "stock": 50,
-    "category": "Marcadores",
+    "category": "Libreria",
     "description": "Set de 6 resaltadores de colores pastel con punta biselada.",
     "imageUrl": "/images/resaltador.jpg"
   },
@@ -31,7 +31,7 @@
     "name": "Carpeta anillada A4",
     "price": 950,
     "stock": 50,
-    "category": "Organización",
+    "category": "Organizacion",
     "description": "Carpeta plástica con 4 anillos metálicos y cierre a presión.",
     "imageUrl": "/images/carpeta.jpg"
   },
@@ -40,7 +40,7 @@
     "name": "Regla de 30 cm",
     "price": 300,
     "stock": 50,
-    "category": "Instrumentos",
+    "category": "Libreria",
     "description": "Regla transparente de 30 cm con medidas en centímetros y pulgadas.",
     "imageUrl": "/images/regla.jpg"
   },
@@ -49,7 +49,7 @@
     "name": "Lápiz grafito HB",
     "price": 150,
     "stock": 100,
-    "category": "Escritura",
+    "category": "Libreria",
     "description": "Lápiz de grafito dureza HB con cuerpo de madera y goma incorporada.",
     "imageUrl": "/images/lapiz.jpg"
   },
@@ -58,7 +58,7 @@
     "name": "Tijera escolar 13 cm",
     "price": 600,
     "stock": 50,
-    "category": "Corte",
+    "category": "Libreria",
     "description": "Tijera escolar con punta redonda y mango ergonómico.",
     "imageUrl": "/images/tijera.jpg"
   },
@@ -67,7 +67,7 @@
     "name": "Goma de borrar blanca",
     "price": 180,
     "stock": 100,
-    "category": "Escritura",
+    "category": "Libreria",
     "description": "Goma de borrar suave, no deja manchas ni residuos.",
     "imageUrl": "/images/goma-borrar.jpg"
   },
@@ -76,7 +76,7 @@
     "name": "Pegamento en barra 21g",
     "price": 700,
     "stock": 50,
-    "category": "Adhesivos",
+    "category": "Libreria",
     "description": "Pegamento en barra no tóxico, ideal para papel y cartulina.",
     "imageUrl": "/images/pegamento-barra.jpg"
   },

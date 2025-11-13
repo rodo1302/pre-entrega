@@ -20,6 +20,18 @@ export const Nav = () => {
           <Link to="/">HOME</Link>
         </li>
         <li>
+          <Link to="/category/Libreria">LIBRERIA</Link>
+        </li>
+        <li>
+          <Link to="/category/Papeleria">PAPELERIA</Link>
+        </li>
+        <li>
+          <Link to="/category/Accesorios">ACCESORIOS</Link>
+        </li>
+        <li>
+          <Link to="/category/Organizacion">ORGANIZACION</Link>
+        </li>
+        <li>
           <Link to="/about">ACERCA DE</Link>
         </li>
         <li>

@@ -5,7 +5,7 @@ import { ItemDetail } from "../ItemDetail/ItemDetail";
 import { Link } from "react-router-dom";
 
 export const Cart = () => {
-  const { cart, clearCart, removeItem } = useCartContext();
+  const { cart, clearCart, removeItem, checkout } = useCartContext();
 
   return (
     <section className="cart">
@@ -45,7 +45,7 @@ export const Cart = () => {
             <button className="cart-btn-clear" onClick={() => clearCart()}>
               <strong>Vaciar carrito</strong>
             </button>
-            <button className="cart-btn-checkout">
+            <button className="cart-btn-checkout" onClick={() => checkout()}>
               <strong>Finalizar Compra</strong>
             </button>
           </div>

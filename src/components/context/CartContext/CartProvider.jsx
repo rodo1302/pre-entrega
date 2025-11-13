@@ -42,6 +42,14 @@ export const CartProvider = ({ children }) => {
     return item ? item.quantity : 0;
   };
 
+  const checkout = () => {
+    const ok = confirm("¿Desea finalizar la compra?");
+    if (ok) {
+      clearCart();
+      alert("Gracias por su compra");
+    }
+  };
+
   const values = {
     cart,
     addItem,
@@ -49,6 +57,7 @@ export const CartProvider = ({ children }) => {
     clearCart,
     getTotalItems,
     getItemQuantity,
+    checkout,
   };
   return <CartContext.Provider value={values}>{children}</CartContext.Provider>;
 };
